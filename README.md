@@ -5,7 +5,11 @@
 ```nix
 inputs.process-compose-deploy.url = "github:misuzu/process-compose-deploy";
 
-imports = [ inputs.process-compose-deploy.nixosModule ];
+# for NixOS
+imports = [ inputs.process-compose-deploy.nixosModules.default ];
+
+# for nix-darwin
+imports = [ inputs.process-compose-deploy.darwinModules.default ];
 
 services.process-compose-deploy.default.enable = true;
 ```

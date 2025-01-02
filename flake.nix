@@ -1,6 +1,6 @@
 {
   outputs = inputs: {
-    nixosModules.default = ./module.nix;
-    nixosModule = inputs.self.nixosModules.default;
+    darwinModules.default = ./darwin-module.nix;
+    nixosModules.default = ./nixos-module.nix;
   };
 }
