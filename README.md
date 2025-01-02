@@ -51,7 +51,7 @@ ssh myuser@myhost sudo process-compose-deploy-default $(readlink -f ./result)
 
 ## Related projects
 
-- [`process-compose-flake`](https://github.com/juspay/services-flake): A `flake-parts` module to spin up processes for development by leveraging `process-compose`.
+- [`process-compose-flake`](https://github.com/Platonic-Systems/process-compose-flake): A `flake-parts` module to spin up processes for development by leveraging `process-compose`.
 - [`services-flake`](https://github.com/juspay/services-flake): NixOS-like services built on top of `process-compose-flake`.
 - [`microvm.nix`](https://github.com/astro/microvm.nix): NixOS MicroVMs.
 - [`attic`](https://github.com/zhaofengli/attic): Multi-tenant Nix Binary Cache.
